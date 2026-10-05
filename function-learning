@@ -1,0 +1,141 @@
+
+
+1. **Matrix / Tensor Initialization** — Creates numerical data structures for computations.
+2. **Tensor Shape Management** — Tracks dimensions throughout every operation.
+3. **Matrix Printing** — Displays matrices for debugging and verification.
+4. **Weight Randomization** — Initializes model parameters with suitable random values.
+5. **Element-Wise Addition** — Adds corresponding elements between tensors.
+6. **Element-Wise Subtraction** — Subtracts corresponding tensor elements.
+7. **Element-Wise Multiplication** — Multiplies corresponding tensor elements together.
+8. **Element-Wise Division** — Divides corresponding tensor elements safely.
+9. **Matrix Scaling** — Multiplies every element by one scalar.
+10. **Matrix Power** — Raises tensor elements to specified powers.
+11. **Matrix Square Root** — Calculates element-wise square roots.
+12. **Matrix Sum** — Calculates sums across tensor elements.
+13. **Matrix Mean** — Calculates averages across tensor elements.
+14. **Matrix Maximum** — Finds maximum values for numerical stability.
+15. **Vector / Tensor Norm** — Calculates vector or tensor magnitude.
+16. **Matrix Transpose** — Swaps matrix rows and columns.
+17. **Matrix Multiplication** — Performs fundamental neural-network calculations.
+18. **Tensor Reshape** — Changes tensor dimensions without changing values.
+19. **Tensor Slice** — Extracts specific sections from tensors.
+20. **Tensor Concatenate** — Joins tensors along specified dimensions.
+21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.
+22. **Sigmoid Activation** — Maps values smoothly between zero and one.
+23. **Sigmoid Backward** — Calculates gradients through sigmoid activation.
+24. **Swish Activation** — Applies sigmoid-gated nonlinear activation function.
+25. **Swish Backward** — Calculates gradients through Swish activation.
+26. **Softmax Normalize** — Converts logits into probability distributions.
+27. **Softmax Backward** — Calculates gradients through softmax operation.
+28. **Argmax Lookup** — Finds index containing highest probability.
+29. **Cross-Entropy Loss** — Measures prediction error against target tokens.
+30. **Loss Averaging** — Averages losses across multiple predictions.
+31. **Byte Vocabulary Construction** — Creates initial vocabulary from individual bytes.
+32. **Pair Frequency Counting** — Counts adjacent token pairs across training text.
+33. **Merge Selection** — Selects most frequent pairs for merging.
+34. **Merge Application** — Replaces selected pairs with new tokens.
+35. **Vocabulary Expansion** — Adds newly created merged tokens.
+36. **BBPE Training Loop** — Repeats pair merging until vocabulary target.
+37. **Token Encoding** — Converts text into BBPE token IDs.
+38. **Token Decoding** — Converts token IDs back into readable text.
+39. **Merge Table Serialization** — Saves tokenizer vocabulary and merge rules.
+40. **Merge Table Loading** — Restores tokenizer configuration from disk.
+41. **Tokenizer Testing** — Verifies encoding and decoding correctness.
+42. **Linear Layer Constructor** — Creates reusable weighted projection layers.
+43. **Linear Layer Forward** — Calculates weighted layer outputs.
+44. **Linear Layer Backward** — Calculates input and parameter gradients.
+45. **Embedding Constructor** — Creates trainable vocabulary embedding matrix.
+46. **Embedding Forward** — Converts token IDs into vector representations.
+47. **Embedding Backward** — Calculates gradients for encountered embeddings.
+48. **RMSNorm Forward** — Normalizes hidden states using root-mean-square.
+49. **RMSNorm Backward** — Calculates gradients through RMS normalization.
+50. **RoPE Construction** — Creates rotary positional encoding parameters.
+51. **RoPE Forward** — Rotates representations according to token positions.
+52. **RoPE Backward** — Propagates gradients through positional rotations.
+53. **Causal Masking** — Prevents attention from seeing future tokens.
+54. **Self-Attention Constructor** — Creates Q, K, V projection parameters.
+55. **Self-Attention Forward** — Calculates scaled dot-product attention.
+56. **Self-Attention Backward** — Calculates gradients through attention calculations.
+57. **Multi-Head Constructor** — Creates multiple parallel attention heads.
+58. **Multi-Head Forward** — Runs attention across multiple independent heads.
+59. **Multi-Head Backward** — Propagates gradients through all attention heads.
+60. **Multi-Head Concatenation** — Combines outputs from multiple attention heads.
+61. **SwiGLU Combination** — Performs gated Swish feed-forward calculation.
+62. **SwiGLU Backward** — Calculates gradients through SwiGLU gating.
+63. **SwiGLU Layer Constructor** — Creates SwiGLU projection weight matrices.
+64. **SwiGLU Layer Forward** — Processes representations through feed-forward network.
+65. **SwiGLU Layer Backward** — Propagates gradients through feed-forward network.
+66. **Residual Connection Forward** — Adds sublayer output back to input.
+67. **Residual Connection Backward** — Propagates gradients through residual pathways.
+68. **Transformer Block Constructor** — Builds one complete Transformer block.
+69. **Transformer Block Forward** — Runs attention and feed-forward processing.
+70. **Transformer Block Backward** — Propagates gradients through entire block.
+71. **Transformer Model Constructor** — Creates and connects Transformer blocks.
+72. **Transformer Model Forward** — Processes sequences through complete Transformer.
+73. **Transformer Model Backward** — Propagates gradients through complete Transformer.
+74. **LM Head Constructor** — Creates final vocabulary projection layer.
+75. **LM Head Forward** — Converts hidden states into vocabulary logits.
+76. **LM Head Backward** — Calculates gradients for final projection.
+77. **Parameter Registry** — Tracks every trainable model parameter.
+78. **Gradient Zeroing** — Clears gradients before each training step.
+79. **Gradient Accumulation** — Combines gradients across training examples.
+80. **Gradient Clipping** — Prevents excessively large gradients destabilizing training.
+81. **NaN / Infinity Detection** — Detects numerical instability during calculations.
+82. **Numerical Gradient Checking** — Compares analytical and numerical gradients.
+83. **Backpropagation Engine** — Coordinates gradients throughout the network.
+84. **Training Dataset Loader** — Loads tokenized training data into memory.
+85. **Sequence Chunking** — Splits token streams into training sequences.
+86. **Next-Token Target Construction** — Creates shifted targets for prediction.
+87. **Batch Constructor** — Groups training sequences into batches.
+88. **Batch Shuffling** — Randomizes training examples between training passes.
+89. **AdamW Initialization** — Creates optimizer state for model parameters.
+90. **AdamW Moment Update** — Updates first and second gradient moments.
+91. **AdamW Weight Update** — Adjusts parameters using calculated gradients.
+92. **AdamW Weight Decay** — Regularizes weights using decoupled decay.
+93. **Learning Rate Scheduler** — Changes learning rate throughout training.
+94. **Training Step** — Performs forward, backward, and optimization.
+95. **Training Loop** — Repeats training steps across the dataset.
+96. **Model Evaluation** — Measures model performance without updating weights.
+97. **Temperature Scaling** — Controls randomness of generated probabilities.
+98. **Top-K Filtering** — Restricts choices to highest-probability tokens.
+99. **Top-P Filtering** — Restricts choices by cumulative probability.
+100. **Random Categorical Sampling** — Selects tokens according to probabilities.
+101. **Sampling Engine** — Coordinates filtering and token selection.
+102. **Generation Loop** — Repeatedly predicts tokens to generate text.
+103. **Stop Condition Checking** — Detects when generation should terminate.
+104. **Text Generation Pipeline** — Connects tokenizer, model, and sampler.
+105. **Binary Weight Serialization** — Saves model weights into binary files.
+106. **Binary Weight Deserialization** — Loads model weights from binary files.
+107. **Model Configuration Serialization** — Saves architecture settings alongside weights.
+108. **Model Configuration Loading** — Reconstructs architecture from saved settings.
+109. **Parameter Counting** — Calculates total trainable model parameters.
+110. **GGUF Header Construction** — Writes GGUF magic, version, and tensor counts.
+111. **GGUF Metadata Writer** — Stores architecture and model configuration metadata.
+112. **GGUF Vocabulary Writer** — Stores tokenizer vocabulary inside GGUF.
+113. **GGUF Tokenizer Metadata** — Stores tokenizer type and configuration.
+114. **GGUF Tensor Name Mapping** — Maps internal names to GGUF conventions.
+115. **GGUF Tensor Descriptor Writer** — Writes tensor names, shapes, and types.
+116. **GGUF Tensor Data Writer** — Writes model weights into GGUF.
+117. **GGUF Data-Type Conversion** — Converts weights into supported GGUF formats.
+118. **GGUF Alignment Handling** — Places tensor data at required boundaries.
+119. **GGUF File Validation** — Verifies generated files contain valid GGUF structures.
+120. **GGUF Import Testing** — Tests exported models with compatible inference software.
+121. **Performance Benchmarking** — Measures execution time and computational performance.
+122. **Memory Usage Profiling** — Measures memory consumption during execution.
+123. **Flat Array Storage** — Improves memory locality and access efficiency.
+124. **Cache-Friendly Loop Ordering** — Reduces CPU cache misses during calculations.
+125. **Matrix Multiplication Optimization** — Improves the primary computational bottleneck.
+126. **Parallel CPU Operations** — Uses multiple CPU cores simultaneously.
+127. **SIMD Vectorization** — Processes multiple numerical values simultaneously.
+128. **Training Throughput Benchmarking** — Measures tokens processed per second.
+129. **Optimization Comparison** — Compares performance before and after improvements.
+130. **Device Management** — Tracks whether tensors use CPU or GPU.
+131. **CPU-to-GPU Transfer** — Moves tensor data into GPU memory.
+132. **GPU-to-CPU Transfer** — Retrieves tensor data from GPU memory.
+133. **GPU Memory Management** — Allocates and releases GPU memory.
+134. **GPU Matrix Multiplication** — Performs matrix calculations on GPU.
+135. **GPU Element-Wise Operations** — Performs tensor operations on GPU.
+136. **GPU Kernel Management** — Controls execution of GPU computations.
+137. **GPU Synchronization** — Coordinates CPU and GPU operations.
+138. **GPU Performance Benchmarking** — Compares GPU and CPU performance.
+139. **Tensor Core Optimization** — Optimizes suitable operations for Tensor Cores.
