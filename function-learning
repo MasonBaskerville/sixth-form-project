@@ -17,7 +17,7 @@
 15. **Vector / Tensor Norm** — Calculates vector or tensor magnitude.
 16. **Matrix Transpose** — Swaps matrix rows and columns.
 17. **Matrix Multiplication** — Performs fundamental neural-network calculations.
-18. **Tensor Reshape** — Changes tensor dimensions without changing values.
+18. **Tensor Reshape** — Changes tensor dimensions without changing values.             next function to do
 19. **Tensor Slice** — Extracts specific sections from tensors.
 20. **Tensor Concatenate** — Joins tensors along specified dimensions.
 21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.
