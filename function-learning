@@ -18,9 +18,9 @@
 16. **Matrix Transpose** — Swaps matrix rows and columns.
 17. **Matrix Multiplication** — Performs fundamental neural-network calculations.
 18. **Tensor Reshape** — Changes tensor dimensions without changing values.
-19. **Tensor Slice** — Extracts specific sections from tensors.                 next function to do
+19. **Tensor Slice** — Extracts specific sections from tensors.
 20. **Tensor Concatenate** — Joins tensors along specified dimensions.
-21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.
+21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.            next function to do
 22. **Sigmoid Activation** — Maps values smoothly between zero and one.
 23. **Sigmoid Backward** — Calculates gradients through sigmoid activation.
 24. **Swish Activation** — Applies sigmoid-gated nonlinear activation function.

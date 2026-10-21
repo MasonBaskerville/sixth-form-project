@@ -15,8 +15,11 @@ public class  Program
 		mat1.print();
 		Console.Write("\n");
 		mat2.print();
-		ma
-		
+		Console.Write("\n");
+		matrix mat3 = mat1.tensor_concatenate(mat2, 1);
+		mat3.print();
+
+
 	}
 }
 
@@ -70,8 +73,48 @@ public class matrix
 		return output;
 	}
 
-	public matrix tensor_concatenate(matrix input,int dimension)
+	public matrix tensor_concatenate(matrix input2,int dimension)
 	{
-		//needs 2 matrices for input not 1
+		matrix output = null;
+		
+		if (dimension == 0)
+		{
+			output = new matrix(data.Length+input2.data.Length, data[0].Length);
+			for (int i =0; i < data.Length; i++)
+			{
+				for (int j = 0; j < data[0].Length; j++)
+				{
+					output.data[i][j] = data[i][j];
+				}
+			}
+
+			for (int i = 0; i < input2.data.Length; i++)
+			{
+				for (int j = 0; j < input2.data[0].Length; j++)
+				{
+					output.data[i+data.Length][j] = input2.data[i][j];
+				}
+			}
+			
+		}
+		else if (dimension == 1)
+		{
+			output = new matrix(data.Length, input2.data[0].Length + data.Length);
+			for (int i = 0; i < data.Length; i++)
+			{
+				for (int j = 0; j < data[0].Length; j++)
+				{
+					output.data[i][j] = data[i][j];
+				}
+			}
+			for (int i = 0; i < input2.data.Length; i++)
+			{
+				for (int j = 0; j < input2.data[0].Length; j++)
+				{
+					output.data[i][j+data[0].Length] = input2.data[i][j];
+				}
+			}
+		}
+		return output;
 	}
 }
