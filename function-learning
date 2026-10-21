@@ -20,9 +20,9 @@
 18. **Tensor Reshape** — Changes tensor dimensions without changing values.
 19. **Tensor Slice** — Extracts specific sections from tensors.
 20. **Tensor Concatenate** — Joins tensors along specified dimensions.
-21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.            next function to do
+21. **Tensor Broadcasting** — Applies smaller tensors across larger tensors.
 22. **Sigmoid Activation** — Maps values smoothly between zero and one.
-23. **Sigmoid Backward** — Calculates gradients through sigmoid activation.
+23. **Sigmoid Backward** — Calculates gradients through sigmoid activation.         next function to do
 24. **Swish Activation** — Applies sigmoid-gated nonlinear activation function.
 25. **Swish Backward** — Calculates gradients through Swish activation.
 26. **Softmax Normalize** — Converts logits into probability distributions.

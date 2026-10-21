@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "uvraEoE6SeM=",
+  "dgSpecHash": "ETl6z0u+8K0=",
   "success": true,
   "projectFilePath": "/home/masonb/Documents/sixth-form-project/LLM/LLM/LLM/LLM.csproj",
   "expectedPackageFiles": [
-    "/home/masonb/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.12/microsoft.aspnetcore.app.ref.10.0.12.nupkg.sha512"
+    "/home/masonb/.nuget/packages/microsoft.aspnetcore.app.ref/10.0.13/microsoft.aspnetcore.app.ref.10.0.13.nupkg.sha512"
   ],
   "logs": []
 }

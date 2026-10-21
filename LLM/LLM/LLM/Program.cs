@@ -393,13 +393,10 @@ public class matrix
 		{
 			Console.WriteLine("error: dimension mismatch");
 		}
-		
-		
-		
 		return output;
 	}
 
-	public class sigmoid()
+	public matrix tensor_broadcast_add(matrix input)
 	{
 		matrix output = new matrix(data.Length, data[0].Length);
 		
