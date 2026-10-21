@@ -9,14 +9,14 @@ public class  Program
 	public static void Main()
 	{
 		matrix mat1 = new matrix(2, 2);
-		matrix mat2 = new matrix(2, 2);
+		matrix mat2 = new matrix(1, 2);
 		mat2.randomize();
 		mat1.randomize();
 		mat1.print();
 		Console.Write("\n");
 		mat2.print();
 		Console.Write("\n");
-		matrix mat3 = mat1.tensor_concatenate(mat2, 1);
+		matrix mat3 = mat1.tensor_broadcast_mul(mat2);
 		mat3.print();
 
 

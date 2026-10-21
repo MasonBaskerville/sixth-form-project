@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/masonb/Documents/GitHub/sixth-form-project/LLM/LLM/LLM/LLM.csproj",
+      "projectUniqueName": "/home/masonb/Documents/sixth-form-project/LLM/LLM/LLM/LLM.csproj",
       "projectName": "LLM",
-      "projectPath": "/home/masonb/Documents/GitHub/sixth-form-project/LLM/LLM/LLM/LLM.csproj",
+      "projectPath": "/home/masonb/Documents/sixth-form-project/LLM/LLM/LLM/LLM.csproj",
       "packagesPath": "/home/masonb/.nuget/packages/",
-      "outputPath": "/home/masonb/Documents/GitHub/sixth-form-project/LLM/LLM/LLM/obj/",
+      "outputPath": "/home/masonb/Documents/sixth-form-project/LLM/LLM/LLM/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/masonb/.nuget/NuGet/NuGet.Config"
@@ -26,7 +26,6 @@
         "net10.0"
       ],
       "sources": {
-        "/usr/share/dotnet/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
