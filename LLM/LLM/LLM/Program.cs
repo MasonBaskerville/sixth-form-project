@@ -403,4 +403,20 @@ public class matrix
 	{
 		
 	}
+
+	public matrix sigmoid_activation()
+	{
+		matrix output = new matrix(data.Length, data[0].Length);
+		for (int i = 0; i < data.Length; i++)
+		{
+			for (int j = 0; j < data[0].Length; j++)
+			{
+				output.data[i][j] = 1/(1+Math.Exp(-data[i][j]));
+			}
+		}
+
+		return output;
+	}
+
+
 }
