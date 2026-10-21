@@ -330,4 +330,43 @@ public class matrix
 		}
 		return output;
 	}
+
+	public matrix tensor_broadcast_mul(matrix input)
+	{
+		matrix output = new matrix(data.Length, data[0].Length);
+		
+		if (data.Length == input.data.Length)
+		{
+			for(int i=0;i<data.Length;i++)
+			{
+				for(int j=0;j<data[0].Length;j++)
+				{
+					output.data[i][j] = data[i][j]*input.data[i][0];
+				}
+			}
+		}
+		else if (data[0].Length == input.data[0].Length)
+		{
+			for(int i=0;i<data.Length;i++)
+			{
+				for(int j=0;j<data[0].Length;j++)
+				{
+					output.data[i][j] = data[i][j]*input.data[0][j];
+				}
+			}
+		}
+		else
+		{
+			Console.WriteLine("error: dimension mismatch");
+		}
+		
+		
+		
+		return output;
+	}
+
+	public class sigmoid()
+	{
+		
+	}
 }
